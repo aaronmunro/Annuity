@@ -17,7 +17,7 @@ def EPV(i, n, CF):
     return CF * np.dot(probabilities(n), discounts(i, n))
 
 if __name__ == "__main__":
-    i = int(input("Input i: "))
+    i = float(input("Input i: "))
     n = int(input("Input n: "))
-    CF = int(input("Input CF: "))
+    CF = float(input("Input CF: "))
     print("EPV: ", EPV(i, n, CF))
